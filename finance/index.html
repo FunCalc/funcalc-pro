@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Finance Calculators Hub | pro.funcalc.fun</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1c1e21; color: white; }
-        .container { max-width: 900px; margin: 50px auto; padding: 30px; background-color: #2a2c30; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        h1 { color: #34a853; font-size: 2.2em; margin-bottom: 20px;}
-        .tool-list { list-style: none; padding: 0; text-align: left;}
-        .tool-list li { margin: 15px 0; border-bottom: 1px solid #3e4042; padding-bottom: 10px;}
-        .tool-list li a { color: #ff9800; font-weight: bold; font-size: 1.1em; text-decoration: none;}
-        .tool-list li a:hover { color: #ffc107;}
-        .ad-space { border: 2px dashed #00b0ff; padding: 15px; margin: 20px 0; background-color: #2a2c30;}
-    </style>
-    </head>
+<html>
+<head><title>Finance Calculators Hub</title>
+    <style> /* FINAL MASTER CSS FOR PRO HUBS */
+:root { 
+    --primary-blue: #1a73e8; /* Base text color */
+    --secondary-orange: #ff9800; /* Highlight color */
+    --bg-light: #f8f9fa;
+    --card-bg: #fff;
+}
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--primary-blue); line-height: 1.6; text-align: center; margin: 0; }
+.container { max-width: 900px; margin: 50px auto; padding: 30px; background-color: var(--card-bg); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+h1 { color: var(--secondary-orange); font-size: 2.2em; margin-bottom: 20px;}
+h3 { margin: 0; padding: 10px 0; border-bottom: 2px solid #ddd; color: var(--secondary-orange); }
+.tool-list { list-style: none; padding: 0; text-align: left; margin-top: 15px;}
+.tool-list li { margin: 12px 0; padding: 8px 0; border-bottom: 1px dashed #eee;}
+.tool-list li a { color: var(--primary-blue); font-weight: bold; font-size: 1.1em; text-decoration: none; transition: color 0.2s;}
+.tool-list li a:hover { color: var(--secondary-orange);}
+
+/* Earning Slots */
+.ad-slot { margin: 25px 0; border: 2px dashed #34a853; padding: 15px; text-align: center; background-color: #e9fbe9;}
+.affiliate-box { margin-top: 30px; padding: 20px; background-color: #ffe0b2; border-radius: 8px; font-weight: bold; color: #db4437;}
+.affiliate-box a { color: #db4437; text-decoration: underline;} </style>
+</head>
 <body>
     <div class="container">
         <h1>📈 Finance Calculators Hub</h1>
         <p>Investment, Loan, and Amortization tools for serious financial planning.</p>
 
-        <div class="ad-space">[ADSENSE SLOT: Wide Banner - High CPC Finance]</div>
-
+        <div class="ad-slot">[ADSENSE SLOT 1: High CPC Finance Banner]</div>
+        
+        <h3>Investment & Savings Tools</h3>
         <ul class="tool-list">
-            <li><a href="compound-interest-calc/index.html">Compound Interest Calculator</a><br>Investment growth planning.</li>
-            <li><a href="loan-amortization/index.html">Loan Amortization Schedule</a><br>Month-by-month principal & interest breakdown.</li>
-            <li><a href="commercial-loan-emi/index.html">Commercial Loan EMI Calculator</a><br>Business financing tool.</li>
-            <li><a href="investment-value-calc/index.html">Investment Value Estimator</a><br>Future value with contributions.</li>
-            <li><a href="inflation-impact-calc/index.html">Inflation Impact Estimator</a><br>Future purchasing power.</li>
+            <li><a href="compound-interest-calc/index.html">Compound Interest Calculator</a></li>
+            <li><a href="investment-value-calc/index.html">Investment Value Estimator</a></li>
+            <li><a href="inflation-impact-calc/index.html">Inflation Impact Estimator</a></li>
         </ul>
 
-        <div class="ad-space" style="border-color: #34a853;"><a href="[YOUR_BROKERAGE_AFFILIATE_LINK]" style="color: #34a853;">Start Investing Smartly Today (Affiliate Link)</a></div>
+        <h3>Loan & Debt Tools</h3>
+        <ul class="tool-list">
+            <li><a href="commercial-loan-emi/index.html">Commercial Loan EMI Calculator</a></li>
+            <li><a href="loan-amortization/index.html">Loan Amortization Schedule</a></li>
+        </ul>
 
-        <p style="margin-top: 30px;"><a href="https://pro.funcalc.fun">← Back to Category Selection</a></p>
+        <div class="affiliate-box">
+            Optimize your portfolio: <a href="[YOUR_BROKERAGE_AFFILIATE_LINK]">Find the Best Investment Broker (Affiliate Link)</a>
+        </div>
+        
+        <p style="margin-top: 30px;"><a href="../index.html">← Back to Category Selection</a></p>
     </div>
 </body>
 </html>
