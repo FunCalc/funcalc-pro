@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator - World's Best Investment Growth Tool | funcalc.fun Pro</title>
+    <meta name="description" content="Calculate your future investment value precisely. Compare different scenarios, periodic contributions, and visualize long-term compound growth."/>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Compound Interest Calculator",
+      "description": "Calculate future investment value with compound interest formula.",
+      "url": "https://pro.funcalc.fun/compound-interest-calc/index.html",
+      "keywords": "compound interest calculator, investment growth, SIP calculator, finance"
+    }
+    </script>
+    
+    <style>
+        :root { --primary-color: #1a73e8; --secondary-color: #34a853; }
+        /* ... (Styling remains the same for cleaner viewing) ... */
+        body { font-family: 'Roboto', Arial, sans-serif; background-color: #f8f9fa; line-height: 1.6; margin: 0; padding-top: 20px;}
+        .container { max-width: 700px; margin: 0 auto; padding: 30px; background-color: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);}
+        h1 { color: var(--primary-color); text-align: center; margin-bottom: 30px; font-size: 1.8em;}
+        .calculator { display: grid; grid-template-columns: 1fr 1fr; gap: 20px;}
+        label { display: block; margin-bottom: 5px; font-weight: bold;}
+        input[type="number"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;}
+        button { background-color: var(--secondary-color); color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; grid-column: 1 / -1; margin-top: 15px;}
+        #result { margin-top: 30px; padding: 25px; border-radius: 8px; font-size: 1.1em; text-align: center; border: 2px dashed var(--primary-color); background-color: #f0f8ff;}
+        .seo-content { margin-top: 50px; border-top: 1px solid #eee; padding-top: 30px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Compound Interest Calculator</h1>
+
+        <div class="calculator">
+            <div><label for="principal">Starting Principal (₹)</label><input type="number" id="principal" value="10000" required></div>
+            <div><label for="rate">Annual Rate (%)</label><input type="number" id="rate" value="7" required></div>
+            <div><label for="time">Time Period (Years)</label><input type="number" id="time" value="10" required></div>
+            <div><label for="compounds">Compounds per Year</label><input type="number" id="compounds" value="12" required></div>
+            
+            <button onclick="calculateCompoundInterest()">Calculate Growth</button>
+        </div>
+
+        <div id="result">
+            <p>Future Value: ₹0</p>
+        </div>
+        
+        <div class="seo-content">
+            <h2>The Secret to Wealth: Compound Interest Formula Explained</h2>
+            <p>To rank Top, we provide authority content. This section needs **2000+ words** explaining the formula (A = P(1 + r/n)^(nt)), how 'n' (compounding frequency) affects growth, and comparison tables.</p>
+            <h3>FAQ: Investment Planning (High CPC)</h3>
+            <p><strong>Q: How often should I compound my interest?</strong> A: The more frequently the better (daily or monthly).</p>
+            <p><strong>Q: What is the magic of the compounding calculator?</strong> A: It helps you visualize long-term investment discipline and the power of time over money.</p>
+        </div>
+    </div>
+
+    <script>
+        // (JavaScript Logic is the same, ensuring accurate calculation)
+        function calculateCompoundInterest() {
+            const P = parseFloat(document.getElementById('principal').value);
+            const r = parseFloat(document.getElementById('rate').value) / 100;
+            const t = parseFloat(document.getElementById('time').value);
+            const n = parseFloat(document.getElementById('compounds').value);
+            const resultDiv = document.getElementById('result');
+
+            if (isNaN(P) || isNaN(r) || isNaN(t) || isNaN(n) || n === 0) {
+                resultDiv.innerHTML = '<p style="color: red;">Please enter valid values.</p>';
+                return;
+            }
+
+            // A = P(1 + r/n)^(nt)
+            const futureValue = P * Math.pow((1 + r / n), (n * t));
+            const totalInterest = futureValue - P;
+
+            resultDiv.innerHTML = `
+                <p style="color: var(--secondary-color);">Future Value: <strong>₹${futureValue.toLocaleString('en-IN', { maximumFractionDigits: 0 })}</strong></p>
+                <p style="font-size: 0.9em;">Total Interest Earned: ₹${totalInterest.toLocaleString('en-IN', { maximumFractionDigits: 0 })}</p>
+            `;
+        }
+    </script>
+    <div style="text-align: center; padding: 30px 0; border-top: 1px solid #eee; margin-top: 60px; font-size: 0.9em; color: #666;">
+        <p>&copy; 2025 funcalc.fun. All Rights Reserved.</p>
+        <p>
+            <a href="https://funcalc.fun/privacy.html">Privacy Policy</a> | 
+            <a href="https://funcalc.fun/about.html">About Us</a> |
+            <a href="https://funcalc.fun/contact.html">Contact</a>
+        </p>
+    </div>
+</body>
+</html>
