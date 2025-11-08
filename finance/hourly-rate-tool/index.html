@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Freelance Hourly Rate Calculator: Estimate Project Pricing | funcalc.fun Pro</title>
+    <meta name="description" content="Calculate your minimum sustainable hourly rate by factoring in overheads, taxes, and desired profit. Essential for freelancers."/>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Calculator",
+      "name": "Freelance Hourly Rate Calculator",
+      "description": "Calculates the ideal hourly rate for freelancers based on cost and profit goals.",
+      "keywords": "hourly rate calculator, freelance pricing, business rate, project cost estimator"
+    }
+    </script>
+    
+    <style>/* Styling */</style>
+</head>
+<body>
+    <div class="container">
+        <h1>💸 Freelance Hourly Rate Estimator</h1>
+        <p>Determine your minimum profitable hourly rate.</p>
+
+        <div class="calculator">
+            <div><label for="yearlyIncome">Desired Annual Income (₹)</label><input type="number" id="yearlyIncome" value="1000000" required></div>
+            <div><label for="billableDays">Billable Days / Year</label><input type="number" id="billableDays" value="220" required></div>
+            <div><label for="overhead">Annual Overheads (₹)</label><input type="number" id="overhead" value="50000" required></div>
+            
+            <button onclick="calculateRate()">Calculate Profitable Rate</button>
+        </div>
+
+        <div id="result"><p>Recommended Hourly Rate: ₹0</p></div>
+        
+        <div class="seo-content">
+            <h2>Why This Tool Attracts High-Value Users:</h2>
+            <p>Freelancers who use this tool are actively looking for solutions to manage payments and clients, making them prime targets for high-ticket invoicing or CRM affiliate tools.</p>
+        </div>
+    </div>
+
+    <script>
+        function calculateRate() {
+            const income = parseFloat(document.getElementById('yearlyIncome').value);
+            const billableDays = parseFloat(document.getElementById('billableDays').value);
+            const overhead = parseFloat(document.getElementById('overhead').value);
+            
+            if (isNaN(income) || isNaN(billableDays) || isNaN(overhead) || billableDays === 0) return;
+            
+            const totalHours = billableDays * 8; // Assuming 8 billable hours per day
+            const requiredProfit = income + overhead;
+            const hourlyRate = requiredProfit / totalHours;
+
+            document.getElementById('result').innerHTML = `<p style="color: #34a853;">Recommended Rate: <strong>₹${hourlyRate.toFixed(0)} / Hour</strong></p>`;
+        }
+    </script>
+    <div style="text-align: center; padding: 30px 0; border-top: 1px solid #eee; margin-top: 60px; font-size: 0.9em; color: #666;">
+        <p><a href="https://funcalc.fun/privacy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>
