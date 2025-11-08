@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head><title>Freelance Tools List</title><style>/* Add basic styling */</style></head>
+<head><title>Freelance Tools Hub</title>
+    <style> /* FINAL MASTER CSS FOR PRO HUBS */
+:root { 
+    --primary-blue: #1a73e8; /* Base text color */
+    --secondary-orange: #ff9800; /* Highlight color */
+    --bg-light: #f8f9fa;
+    --card-bg: #fff;
+}
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); color: var(--primary-blue); line-height: 1.6; text-align: center; margin: 0; }
+.container { max-width: 900px; margin: 50px auto; padding: 30px; background-color: var(--card-bg); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+h1 { color: var(--secondary-orange); font-size: 2.2em; margin-bottom: 20px;}
+h3 { margin: 0; padding: 10px 0; border-bottom: 2px solid #ddd; color: var(--secondary-orange); }
+.tool-list { list-style: none; padding: 0; text-align: left; margin-top: 15px;}
+.tool-list li { margin: 12px 0; padding: 8px 0; border-bottom: 1px dashed #eee;}
+.tool-list li a { color: var(--primary-blue); font-weight: bold; font-size: 1.1em; text-decoration: none; transition: color 0.2s;}
+.tool-list li a:hover { color: var(--secondary-orange);}
+
+/* Earning Slots */
+.ad-slot { margin: 25px 0; border: 2px dashed #34a853; padding: 15px; text-align: center; background-color: #e9fbe9;}
+.affiliate-box { margin-top: 30px; padding: 20px; background-color: #ffe0b2; border-radius: 8px; font-weight: bold; color: #db4437;}
+.affiliate-box a { color: #db4437; text-decoration: underline;} </style>
+</head>
 <body>
     <div class="container">
-        <h1>✍️ Freelance Tools</h1>
-        <ul style="list-style: none; padding: 0;">
+        <h1>✍️ Freelance Tools Hub</h1>
+        <p>Tools for accurate pricing, time tracking, and tax estimation.</p>
+
+        <div class="ad-slot">[ADSENSE SLOT 1: Productivity/Freelancer Ad]</div>
+
+        <ul class="tool-list">
             <li><a href="project-quote-calc/index.html">Project Quote Calculator</a></li>
             <li><a href="hourly-to-salary-calc/index.html">Hourly to Salary Converter</a></li>
             <li><a href="billable-hours-tracker/index.html">Billable Hours Tracker</a></li>
             <li><a href="tax-estimator-calc/index.html">Tax Estimator Calculator</a></li>
         </ul>
-        <p><a href="../index.html">← Back to Category Selection</a></p>
+
+        <div class="affiliate-box">
+            Manage your time: <a href="[YOUR_TIME_TRACKING_AFFILIATE_LINK]">Use Toggl/Clockify for Better Billing (Affiliate Link)</a>
+        </div>
+
+        <p style="margin-top: 30px;"><a href="../index.html">← Back to Category Selection</a></p>
     </div>
 </body>
 </html>
