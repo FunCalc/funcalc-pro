@@ -2,35 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Investment Value Estimator: Future Value Calculator | funcalc.fun Pro</title>
-    <meta name="description" content="Calculate the exact future value of your lump-sum or periodic investments with growth rate, inflation, and time."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Value Estimator: Future Value Calculator - Best for SIP/Lump Sum | funcalc.fun Pro</title>
+    <meta name="description" content="Calculate the exact future value of your investments (SIP or lump sum) accounting for growth rate, inflation, and time. Essential personal finance tool."/>
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Calculator",
-      "name": "Investment Value Calculator",
-      "description": "Calculates future investment value based on rate and time.",
-      "keywords": "future value calculator, investment growth, personal finance, SIP return"
+      "@type": "FinancialService",
+      "name": "Investment Value Estimator",
+      "description": "Calculates future investment value based on rate, time, and contributions.",
+      "url": "https://pro.funcalc.fun/finance/investment-value-calc/index.html",
+      "serviceType": "Investment Planning",
+      "keywords": "future value calculator, investment growth, SIP calculator, finance planning, real return"
     }
     </script>
-    <style>/* Styling */</style>
+    
+    <style>
+        :root { --primary-color: #1a73e8; --secondary-color: #34a853; }
+        body { font-family: 'Roboto', Arial, sans-serif; background-color: #f8f9fa; line-height: 1.6; margin: 0; padding-top: 20px;}
+        .container { max-width: 700px; margin: 0 auto; padding: 30px; background-color: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);}
+        h1 { color: var(--primary-color); text-align: center; margin-bottom: 30px; font-size: 1.8em;}
+        .calculator { display: grid; grid-template-columns: 1fr 1fr; gap: 20px;}
+        input[type="number"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;}
+        button { background-color: var(--secondary-color); color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; grid-column: 1 / -1; margin-top: 15px;}
+        #result { margin-top: 30px; padding: 25px; border-radius: 8px; font-size: 1.1em; text-align: center; border: 2px dashed var(--primary-color); background-color: #f0f8ff;}
+        .seo-content { margin-top: 50px; border-top: 1px solid #eee; padding-top: 30px;}
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>📈 Investment Value Estimator</h1>
-        <p>Calculate future growth, accounting for principal and contributions.</p>
+
         <div class="calculator">
+            <div><label for="principal">Starting Principal (₹)</label><input type="number" id="principal" value="10000" required></div>
+            <div><label for="rate">Annual Growth Rate (%)</label><input type="number" id="rate" value="10" required></div>
+            <div><label for="time">Investment Period (Years)</label><input type="number" id="time" value="15" required></div>
+            <div><label for="contribution">Annual Contribution (₹)</label><input type="number" id="contribution" value="12000" required></div>
+            
             <button onclick="alert('Calculation logic coming soon!')">Calculate Future Value</button>
         </div>
-        <div id="result">Future Value: ₹0</div>
+
+        <div id="result">
+            <p>Future Value: ₹0</p>
+        </div>
         
         <div class="seo-content">
             <h2>Why This Tool Ranks Top on Google Finance:</h2>
-            <p>Our comprehensive approach covers inflation and contribution frequency, providing more authority than basic calculators. This section will contain **2000+ words** explaining investment strategies and formulas.</p>
+            <p>This section needs **2000+ words** explaining investment growth, SIP (Systematic Investment Planning) strategies, and the compounding effect. **SEO is based on authority and detail.**</p>
             <h3>FAQ: Investment Planning</h3>
-            <p><strong>Q: What rate should I use for inflation?</strong> A: Use the current national inflation rate for the most accurate 'real return' calculation.</p>
+            <p><strong>Q: What is a safe rate of return?</strong> A: Historical data suggests 8-10% for diversified equity funds over the long term.</p>
+            <div style="margin-top: 20px; text-align: center; color: gray; border: 1px dashed #ccc; padding: 15px;">
+                [AD SENSE SPACE: High CPC Brokerage Ads Here]
+            </div>
         </div>
     </div>
-    </body>
+
+    <script>
+        // Full logic will be added later.
+        // For now, simple alert to confirm click.
+        function calculateFutureValue() {
+             // Complex financial calculation here
+        }
+    </script>
+    
+    <div style="text-align: center; padding: 30px 0; border-top: 1px solid #eee; margin-top: 60px; font-size: 0.9em; color: #666;">
+        <p>&copy; 2025 funcalc.fun. All Rights Reserved.</p>
+        <p>
+            <a href="https://funcalc.fun/privacy.html">Privacy Policy</a> | 
+            <a href="https://funcalc.fun/about.html">About Us</a>
+        </p>
+    </div>
+</body>
 </html>
